@@ -4,7 +4,7 @@ import csv
 def read(name):
     with open(f'input/{name}.csv', 'r', encoding="utf-8") as f:
         reader = csv.reader(f)
-        return [row for row in reader]
+        return [row for row in reader][1:]
 
 
 def write(name, header, rows):
