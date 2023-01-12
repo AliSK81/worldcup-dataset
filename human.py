@@ -34,9 +34,10 @@ def append_players():
         name = f'{given_name} {family_name}'
         team_id, team_name, shirt_number = apr[0][8], apr[0][9], apr[0][16]
         age = '' if birth_date in ['', 'not available'] else 2018 - int(birth_date.split('-')[0])
+        goal = 0
 
         out_humans.append([player_id, name, team_name, age])
-        out_players.append([player_id, team_id, shirt_number])
+        out_players.append([player_id, team_id, shirt_number, goal])
 
 
 def append_referees():
