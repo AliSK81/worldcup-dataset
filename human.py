@@ -71,7 +71,7 @@ def append_managers():
         team_id, team_name = apt[0][3], apt[0][4]
 
         out_humans.append([manager_id, name, team_name, age])
-        out_managers.append([manager_id, team_name])
+        out_managers.append([manager_id, team_id])
 
 
 if __name__ == '__main__':
